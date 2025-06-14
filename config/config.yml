@@ -1,0 +1,11 @@
+db_url: postgresql+psycopg2://user:pass@localhost:5432/et_fpm
+lookback_window: 252
+ewma_lambda: 0.94
+stress_pct: 75
+crisis_pct: 90
+default_weight_scheme: liq_inv
+alert:
+  slack_webhook: ${SLACK_WEBHOOK}
+  trvi_crisis: true
+  sigma_spike: 3
+  carbon_jump_pct: 10
